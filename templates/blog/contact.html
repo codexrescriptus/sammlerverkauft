@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="site-section"  data-aos="fade">
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-7">
+            <div class="row mb-5">
+              <div class="col-12 ">
+                <h2 class="site-section-heading text-center">{% trans 'Contact' %}</h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="row">
+
+          {% if message_name %}
+          <div class="col-lg-8 mb-5">
+            <h2>{% trans 'Thanks,' %} {{ message_name }}!</h2>
+            <p>
+              {% trans 'We received your email and will respond shortly...' %}
+            </p>
+          </div>
+          {% else %}
+
+          <div class="col-lg-8 mb-5">
+            <form action="{% url 'blog:contact' %}" method="post">
+
+              {% csrf_token %}
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-white" for="fname">{% trans 'Name' %}</label>
+                  <input type="text" name="message-name" id="fname" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label class="text-white" for="email">{% trans 'Email' %}</label> 
+                  <input type="email" name="message-email"  id="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label class="text-white" for="subject">{% trans 'Subject' %}</label> 
+                  <input type="subject" name="message-subject" id="subject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-white" for="message">{% trans 'Message' %}</label> 
+                  <textarea name="message" name="message" id="message" cols="30" rows="7" class="form-control" placeholder="{% trans 'Write your notes or questions here...' %}"></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="{% trans 'Send Message' %}" class="btn btn-primary py-2 px-4 text-white">
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+          {% endif %}
+          
+          <div class="col-lg-3 ml-auto">
+            <div class="mb-3">
+              <p class="mb-0 font-weight-bold text-white">{% trans 'Address' %}</p>
+              <p class="mb-4">{% trans 'Łódź, Poland' %}</p>
+
+              <p class="mb-0 font-weight-bold text-white">{% trans 'Email Address' %}</p>
+              <p class="mb-0"><a href="mailto:sammlerverkauft@gmail.com">sammlerverkauft@gmail.com</a></p>
+
+              <br>
+              
+              <p class="mb-0 font-weight-bold text-white">{% trans 'Find me to' %}</p>
+              <p class="mb-4">
+                <a href="https://m.facebook.com/profile.php?id=100086746640440" class="pl-0 pr-3" target="_blank"><span class="icon-facebook"></span></a>
+                <a href="https://telegram.me/sammler_verkauft" class="pl-3 pr-3" target="_blank"><span class="icon-telegram"></span></a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+{% endblock %}

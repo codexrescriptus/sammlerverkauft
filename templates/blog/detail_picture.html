@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div>
+      
+    <div class="row justify-content-center">
+      <h2>
+        {{ picture.title }}
+      </h2>
+    </div>
+    <br>
+
+    <div class="row justify-content-center" id="lightgallery">
+      <div class="item" data-aos="fade" data-src="{% if picture.image %} {{ picture.image.url }} {% endif %}" data-sub-html="<h4>{{ picture.title }}</h4><p>{{ picture.author }} {{ picture.year }} {{ picture.country }}</p>">
+        <a href="#"><img src="{% if picture.image %} {{ picture.image.url }} {% endif %}" alt="IMage" class="img-fluid show"></a>
+      </div>
+    </div>
+
+      <div class="row justify-content-center">
+        <h5>{{ picture.author }}</h5>
+      </div>
+
+
+      <div class="row justify-content-center">
+        <h5>{{ picture.year }}   {{ picture.country }}</h5>
+      </div>
+
+      <div class="row justify-content-center">
+        <h5>{{ picture.height }} cm x {{ picture.length }} cm</h5>
+      </div>
+
+      <div class="footer py-4">
+        <div class="container-fluid text-center">
+           <hr style="height:1px;width:20%;color:gray;background-color:#158765">
+        </div>
+      </div>
+
+</div>
+
+
+
+
+{% endblock %}

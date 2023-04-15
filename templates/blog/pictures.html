@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+    <div class="site-section"  data-aos="fade">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-7">
+            <div class="row mb-5">
+              <div class="col-12 ">
+                <h2 class="site-section-heading text-center">{% trans 'Art Gallery'%}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+      <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+        <div class="row justify-content-center">
+        {% for picture in pictures %}
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">{{ picture.title }}</h2>
+              <h5 class="mb-3">{{ picture.author }}</h5>
+              <a href="{{ picture.get_absolute_url }}" class="btn btn-outline-white py-2 px-4">{% trans 'view details...'%}</a>
+            </div>
+
+                <img src="{% if picture.image %} {{ picture.image.url }} {% endif %}" width="auto" height="700" object-fit= 'cover'>
+
+          </div>
+
+        </div>
+      {% endfor %}
+
+      </div>
+    </div>
+    <br>
+
+{% include "blog/pagination.html" with page=pictures %}
+
+{% endblock %}

@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-30 10:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: SAMMLER/settings.py:125
+msgid "English"
+msgstr ""
+
+#: SAMMLER/settings.py:126
+msgid "German"
+msgstr ""
+
+#: SAMMLER/settings.py:127
+msgid "Polish"
+msgstr ""
+
+#: SAMMLER/settings.py:128
+msgid "Russian"
+msgstr ""
+
+#: templates/base.html:57
+msgid "Home"
+msgstr "Stona Głowna"
+
+#: templates/base.html:59 templates/blog/authors.html:14
+msgid "Authors"
+msgstr "Autorski"
+
+#: templates/base.html:71 templates/blog/epochs.html:14
+msgid "Epochs"
+msgstr "Epoki"
+
+#: templates/base.html:78 templates/blog/contact.html:14
+msgid "Contact"
+msgstr "Kontakt"
+
+#: templates/base.html:79
+msgid "About"
+msgstr "O mnie"
+
+#: templates/base.html:81
+msgid "Language"
+msgstr "Język"
+
+#: templates/blog/about.html:11
+msgid "About me"
+msgstr "O mnie"
+
+#: templates/blog/about.html:16
+msgid "Ladies and Gentlemen!"
+msgstr "Szanowni Państwo!"
+
+#: templates/blog/about.html:18
+msgid ""
+"I collect painted and drawn art because I need to surround myself with "
+"objects that sometimes make life seem warmer and more beautiful than I "
+"perceive it at a given time."
+msgstr ""
+"Zbieram sztukę malowaną, rysowaną ponieważ mam potrzebę otaczania się "
+"przedmiotami, dzięki którym czasem życie jawi się cieplejsze i piękniejsze "
+"niż je w danym czasie postrzegam."
+
+#: templates/blog/about.html:20
+msgid ""
+"Collecting my passion also provides aesthetic experiences, which I also want "
+"to share with you .. mentioning not only the items themselves and the "
+"emotions associated with them."
+msgstr ""
+"Zbieranie moja pasja.. dostarczająca również przeżyć estetycznych, z którymi "
+"również chcę się z Państwem podzielić.. wymieniając nie tylko same "
+"przedmioty oraz związane z nimi emocje."
+
+#: templates/blog/about.html:22
+msgid ""
+"I am happy to buy paintings, graphics and other interesting items, exhibits "
+"not necessarily museums."
+msgstr ""
+"Chętnie zakupię obrazy, grafiki oraz inne ciekawe przedmioty, eksponaty nie "
+"koniecznie muzealne."
+
+#: templates/blog/about.html:24
+msgid ""
+"Passion, of course, is priceless; however, it absorbs time beyond what I "
+"spend on work .. and it certainly absorbs all the resources, even those "
+"allocated for something else. Perhaps it is also some kind of addiction "
+"because I cannot explain to myself that no object is worth losing yourself "
+"on the way to its acquisition ..."
+msgstr ""
+"Pasja oczywiście jest bezcenna; absorbuje jednak czas ponad ten,  jaki "
+"przeznaczam na pracę.. a na pewno pochłania wszystkie środki nawet te, "
+"przeznaczone na co innego. Być może to forma również swoistego "
+"uzależnienia , gdyż nie mogę sobie wytłumaczyć, że żaden przedmiot nie jest "
+"wart tego aby zatracić się w drodze do jego nabycia.."
+
+#: templates/blog/about.html:26
+msgid ""
+"To cultivate my passion, I will also gladly sell individual items or parts "
+"of the collection."
+msgstr ""
+"Aby pielęgnować swoją pasję chętnie też sprzedam pojedyncze przedmioty lub "
+"części kolekcji"
+
+#: templates/blog/about.html:27
+msgid "Details, as usual in private correspondence."
+msgstr "Szczegóły , jak zwykle w prywatnej korespondencji."
+
+#: templates/blog/author_pictures.html:28 templates/blog/authors.html:29
+#: templates/blog/epoch_pictures.html:28 templates/blog/epochs.html:29
+#: templates/blog/pictures.html:29
+msgid "view details..."
+msgstr "pokaż szczegóły..."
+
+#: templates/blog/contact.html:25
+msgid "Thanks,"
+msgstr "Dziękuję,"
+
+#: templates/blog/contact.html:27
+msgid "We received your email and will respond shortly..."
+msgstr "Otrzymaliśmy Twój e-mail i wkrótce odpowiemy..."
+
+#: templates/blog/contact.html:38
+msgid "Name"
+msgstr "Imię"
+
+#: templates/blog/contact.html:46
+msgid "Email"
+msgstr "E-mail"
+
+#: templates/blog/contact.html:54
+msgid "Subject"
+msgstr "Temat"
+
+#: templates/blog/contact.html:61
+msgid "Message"
+msgstr "Wiadomość"
+
+#: templates/blog/contact.html:62
+msgid "Write your notes or questions here..."
+msgstr "Zapisz swoje notatki lub pytania tutaj..."
+
+#: templates/blog/contact.html:68
+msgid "Send Message"
+msgstr "Wyślij wiadomość"
+
+#: templates/blog/contact.html:79
+msgid "Address"
+msgstr "Adres zamieszkania"
+
+#: templates/blog/contact.html:80
+msgid "Łódź, Poland"
+msgstr "Łódź, Polska"
+
+#: templates/blog/contact.html:82
+msgid "Phone"
+msgstr "Telefon"
+
+#: templates/blog/contact.html:85
+msgid "Email Address"
+msgstr "Adres e-mail"
+
+#: templates/blog/contact.html:90
+msgid "My"
+msgstr ""
+
+#: templates/blog/pictures.html:14
+msgid "Art Gallery"
+msgstr "Galeria Sztuki"

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+    <div class="site-section"  data-aos="fade">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-7">
+            <div class="row mb-5">
+              <div class="col-12 ">
+                <h2 class="site-section-heading text-center">{% trans 'Epochs'%}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+      <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+        <div class="row justify-content-center">
+        {% for epoch in epochs %}
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">{{ epoch}}</h2>
+              <h5 class="mb-3"></h5>
+              <a href="{{ epoch.get_absolute_url }}" class="btn btn-outline-white py-2 px-4">{% trans 'view details...'%}</a>
+            </div>
+
+              <img src="{{ epoch.picture.first.image.url }}" width="auto" height="700" object-fit= 'cover'>
+              
+          </div>
+
+        </div>
+      {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

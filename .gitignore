@@ -52,8 +52,8 @@ coverage.xml
 .pytest_cache/
 
 # Translations
-*.mo
-*.pot
+.mo
+.pot
 
 # Django stuff:
 *.log
@@ -128,8 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Text backup files
-*.bak
 
-#Database
-.sqlite3

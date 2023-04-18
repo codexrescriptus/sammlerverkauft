@@ -22,15 +22,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-z+z$+awd(@k&6v=8qzvv3wb*10id+queb^l(0qx3+mhg+j-at%'
+SECRET_KEY = 'django-insecure-z+z$+awd(@k&6v=8qzvv3wb*10id+queb^l(0qx3+mhg+j-at%'
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-z+z$+awd(@k&6v=8qzvv3wb*10id+queb^l(0qx3+mhg+j-at%')
+# SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-z+z$+awd(@k&6v=8qzvv3wb*10id+queb^l(0qx3+mhg+j-at%')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
+DEBUG = False
+# DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ["sammlerverkauft.eu", "127.0.0.1"] #'sammlerverkauft.eu', 'www.sammlerverkauft.eu'
+ALLOWED_HOSTS = ["sammlerverkauft.eu", '*', "127.0.0.1"] #'sammlerverkauft.eu', 'www.sammlerverkauft.eu'
 
 
 #  sammler    boringwords4looking2win
